@@ -1,5 +1,4 @@
 # comentario
-
 var1 = "Variable Numero 1"
 num1 = 4
 num2 = 10
@@ -19,21 +18,20 @@ puts 1 + 2
 puts true
 puts false
 
+puts 5 > 3
+puts 4 == 4
+puts 4 != 3
+puts 4 < 10
+puts 3 >= 10
 
- puts 5 > 3
- puts 4 == 4
- puts 4 != 3
- puts 4 < 10
- puts 3 >= 10
+puts "Hola " + "Mundo " + "Desde aqui"
 
- puts "Hola " + "Mundo " + "Desde aqui"
+puts "Hola" + 3.to_s
 
- puts "Hola" + 3.to_s
+puts "Hola 2 + 3 = #{2 + 3}"
 
- puts "Hola 2 + 3 = #{2 + 3}"
+puts "Hola 2 + 3 = " + 2.to_s + 3.to_s
 
- puts "Hola 2 + 3 = " + 2.to_s + 3.to_s
-
- puts "Hola 2 + 3 = " + (2 + 3).to_s
+puts "Hola 2 + 3 = " + (2 + 3).to_s
 
 puts 4 % 2
