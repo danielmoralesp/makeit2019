@@ -3,8 +3,8 @@ require 'sinatra'
 
 ## Paramteros nombrados
 ## Hash params
-get '/hola/:nombre' do
-  "Hola #{params['nombre']}."
+get '/makers/:nombre' do
+  "<h1> Hola #{params['nombre'].capitalize}. </h1>"
 end
 
 # get '/saludo/:nombre' do |n|
@@ -19,8 +19,8 @@ end
 
 get '/' do
   unless params[:nombre]
-    "Hola Desconocido!"
+    "<h1> Hola Desconocido! </h1>"
   else
-    "Hola #{params[:nombre]}!"
+    "<h1> Hola #{params[:nombre]}! </h1>"
   end
 end
