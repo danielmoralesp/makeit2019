@@ -1,0 +1,13 @@
+
+<% if @note %>
+  <form class="" action="/<%= @note.id %>" method="post" id="edit">
+    <input type="hidden" name="_method" value="put">
+    <textarea name="content" rows="8" cols="80"><%= @note.content %></textarea>
+    <input type="checkbox" name="complete" <%= "checked" if @note.complete %>>
+    <input type="submit">
+  </form>
+
+  <p><a href="note/<%= @note.id %>/delete">Eliminar</a></p>
+<% else %>
+  <p>Nota no encontrada o borrada de la base de datos. </p>
+<% end %>
