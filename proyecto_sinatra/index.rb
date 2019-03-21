@@ -57,14 +57,15 @@ class MiApp < Sinatra::Base
     redirect '/'
   end
 
-  get '/note/:id/delete' do
+
+  get '/:id/delete' do
     @note = Notes.get params[:id]
     @title = "Confirma el borrado de la nota #{@note}?"
     erb :delete
   end
+  
 
   post '/note/:id/delete' do
-    # Notes.get(params[:id]).destroy
     n = Notes.get params[:id]
     n.destroy
     redirect '/'
