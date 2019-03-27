@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.delete_all
+
+20.times do |i|
+	User.create(name: "#{i} - Ana", last_name: "Ruiz", phone: 234234, address: "calle 56")
+end
+
+####### Metodos que se invocan sobre la Clase
+User.all
+User.first
+User.last
+User.find(3)
+User.find_by(name: "algo")
+User.where(name: "algo")
+
+####### Metodos que se invocan sobre un registro
+user = User.find(1)
+user.email
+user.save
+user.update(name: "otro name")
+user.destroy
+
