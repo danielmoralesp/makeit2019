@@ -13,17 +13,17 @@ User.delete_all
 end
 
 ####### Metodos que se invocan sobre la Clase
-User.all
-User.first
-User.last
-User.find(3)
-User.find_by(name: "algo")
-User.where(name: "algo")
+# User.all
+# User.first
+# User.last
+# User.find(3)
+# User.find_by(name: "algo")
+# User.where(name: "algo")
 
-####### Metodos que se invocan sobre un registro
-user = User.find(1)
-user.email
-user.save
-user.update(name: "otro name")
-user.destroy
+# ####### Metodos que se invocan sobre un registro
+# user = User.find(1)
+# user.email
+# user.save
+# user.update(name: "otro name")
+# user.destroy
 

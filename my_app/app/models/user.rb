@@ -1,6 +1,11 @@
 class User < ApplicationRecord
 	# validates :email, format: { width: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i, message: 'only validate emails' }
 	validates :phone, numericality: { greater_than: 5 }, presence: true, length: {minimum: 10}
+
+
+	has_many :houses
+	has_many :posts
+	has_many :notes
 end
 
 # less_than
