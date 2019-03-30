@@ -1,28 +1,17 @@
-<h1>Blog#index</h1>
-<p>Find me in app/views/blog/index.html.erb</p>
-
-<!-- ## Header
-## Partial / helper / componente -->
-<%= render 'blog/partials/header' %>
-
-
-<!-- ### Listado de articulos  -->
-
-<!-- <a href="/welcome/contact_us" class="link-to-contact" id="id-css">Contactanos </a> -->
-
-<%= link_to("Contactanos", welcome_contact_us_path , class: "link-to-contact", id: "id-css") %>
-
-
-
-<%= link_to("Prices", welcome_prices_url) %>
-
-
-<!-- 
-Crear un nuevo modelo City
-parametros name y country
-typo de datos country text
-validar la presencia de name y country
-validar minimo una longitud de name de 3 caracteres
-probar las validaciones con create y update
-cambiar el tipo de datos de country a string 
--->
+<h1>Blog</h1>
+<table>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Content</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @blogs.each do |blog| %>
+			<tr>
+				<td><%= blog.title %></td>
+				<td><%= blog.content %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
