@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   
+  resources :products
   root 'welcome#index'
 
   get 'welcome/index', to: 'index/user/welcome#index', as: 'welcome'
@@ -9,9 +10,6 @@ Rails.application.routes.draw do
   get 'welcome/contact_us', to: 'welcome#contact_us'
   get 'welcome/prices', to: 'welcome#prices'
 
-  get 'blog/index'
-  get 'blog/new'
-  get 'blog/show'
-  get 'blog/edit'
+  resources :blog
 
 end
