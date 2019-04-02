@@ -7,3 +7,19 @@
 <div>
 	Phone: 1313213212
 </div>
+
+<%= form_for @welcome, url: ruta_path, method: :post  do |f| %>
+
+	<div>
+		<%= f.label "Nombre de la casilla" %>
+		<%= f.label :name %>
+
+		<%= f.text_field :name %>
+	</div>
+
+<% end %>
+
+<%= form_tag("/search?q=user", method: :get) do %>
+	
+	
+<% end %>

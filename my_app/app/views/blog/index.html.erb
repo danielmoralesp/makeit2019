@@ -1,9 +1,16 @@
 <h1>Blog</h1>
+
+<%= link_to "Create New Post", new_blog_path %>
+
+<br>
+<hr>
+
 <table>
 	<thead>
 		<tr>
 			<th>Title</th>
 			<th>Content</th>
+			<th>Actions</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -11,6 +18,11 @@
 			<tr>
 				<td><%= blog.title %></td>
 				<td><%= blog.content %></td>
+				<td>
+					<%= link_to "Show", blog_path(blog.id) %>
+					<%= link_to "Edit", edit_blog_path(blog.id) %>
+					<%= link_to "Delete", blog_path(blog.id), method: :delete, data: { confirm: "Esta seguro de querer eliminar este post?" } %>
+				</td>
 			</tr>
 		<% end %>
 	</tbody>

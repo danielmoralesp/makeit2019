@@ -21,6 +21,11 @@ class WelcomeController < ApplicationController
   	
   end
 
+  def search
+    ## logica de la busqueda
+    User.all
+  end
+
 
   # vistas / metodos / acciones
 end

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  
+  resources :blog
   resources :products
   root 'welcome#index'
 
@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   get 'welcome/contact_us', to: 'welcome#contact_us'
   get 'welcome/prices', to: 'welcome#prices'
 
-  resources :blog
+  
 
 end
