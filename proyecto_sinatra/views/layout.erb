@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title><%=@title%></title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+<header>
+<hgroup>
+  <h1><a href="/">Notes</a></h1>
+  <h2>Lo creamos porque estas muy ocupado para recordar.</h2>
+</hgroup>
+</header>
+<main id="main">
+  <%= yield %>
+  </main>
+<footer>
+  <p>
+    <small>Una app realizada por Sebastian</small>
+  </p>
+</footer>
+  </body>
+</html>

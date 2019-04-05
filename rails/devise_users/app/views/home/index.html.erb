@@ -1,0 +1,28 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<% if user_signed_in? %>
+
+<%= current_user.email %>
+<%= link_to "Edit User", edit_user_registration_path %>
+<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+
+<% else %>
+
+<%= link_to "login", new_user_registration_path %>
+<%= link_to "Register", new_user_registration_path %>
+
+<% end %>
+
+<div class="container"
+<div class="row">
+	<div class="col-md-4">
+	<div class="card" style="width: 18rem;">
+  	<img src="<%= image_url('/assets/3855.jpg') %>" alt="Card image cap">
+  	<div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
