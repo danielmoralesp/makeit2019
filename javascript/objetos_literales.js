@@ -52,13 +52,14 @@ console.log(ana.saluda("gonzales"))
 // console.log(otroObjeto)
 
 
-var Persona = function(nombre, apellido) {
+var Persona = function(nombre) {
 	this.nombre = nombre
 	this.apellido = apellido
 
-}
+	function op1(){
 
-var persona = Persona.new("daniel", "morales")
+	}
+}
 
 
 
