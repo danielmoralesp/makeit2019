@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function myFunction(){
+			fname = document.forms[0].fname.value
+			email = document.forms[0].email.value
+			alert("Hello " + fname + email +  " you are being redirected to google")
+		}
+		
+	</script>
+</head>
+<body>
+	<form action="https://www.google.com" onsubmit="myFunction()">
+		Enter your name: <br/>
+		<input type="text" id="fname">
+		<input type="email" id="email" >
+		<input type="submit">
+	</form>
+</body>
+</html>

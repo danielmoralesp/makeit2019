@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Document</title>
+	<script>
+		function miFuncion(){
+			preferido = document.forms[0].myId.value;
+			alert("user selecciono" + preferido)
+		}
+	</script>
+</head>
+<body>
+	<form action="">
+		Seleccione el navegador de su preferencia: 
+		<select name="" id="myId" onchange="miFuncion()">
+			<option value="">Seleccione...</option>
+			<option value="chrome">Chrome</option>
+			<option value="explorer">Explorer</option>
+			<option value="safari">Safari</option>
+		</select>
+		
+	</form>
+
+	
+</body>
+</html>
