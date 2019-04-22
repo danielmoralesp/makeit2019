@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script>
-		function myFunction(){
-			// x = document.forms[0].fname.value;
-			y = document.forms["myForm"]["fname"].value;
-			if(y == ""){
-				alert("Name is empty")
-				return false
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<script>
+			function myFunction(){
+				// x = document.forms[0].fname.value;
+				y = document.forms["myForm"]["fname"].value;
+				if(y == ""){
+					alert("Name is empty")
+					return false
+				}
 			}
-		}
-	</script>
-</head>
-<body>
-	<form name="myForm" action="/action" method="post" onsubmit="return myFunction()">
-		Name: <br/>
-		<input type="text" id="fname">
-		<input type="email" required>
-		<input type="submit">
-	</form>
-	
-</body>
+		</script>
+	</head>
+	<body>
+		<form name="myForm" action="/action" method="post" onsubmit="return myFunction()">
+			Name: <br/>
+			<input type="text" id="fname">
+			<input type="email" required>
+			<input type="submit">
+		</form>
+		
+	</body>
 </html>

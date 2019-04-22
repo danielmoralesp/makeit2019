@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		function myFunction(x, y=10){
+			return x + y
+		}
+
+		// Arrow functions
+		const myFunction = (x, y=10) => x + y
+
+		var x = function (x, y){
+			return x + y
+		}
+
+		// Arrow functions
+		const x = (x, y) => x + y
+
+		///////////
+		// rest parameters
+		function myFunction(x, y, ...a){
+			return (x + y) * a.length
+		}
+
+		myFunction(1, 2, "hello", 3, true, false)
+
+		// template literals
+		var customer = {name: "customer name"}
+		var before = "Hello " + customer.name
+		var message = `Hello ${customer.name}`
+
+		// export e import
+		// lib/sum
+		export function sum (x, y) { return x + y }
+
+		// index.js
+		import {sum} from 'lib/sum'
+
+
+
+
+
+	</script>
+</head>
+<body>
+	<h2>Default parameters</h2>
+	<p id="demo"></p>
+
+
+</body>
+</html>
