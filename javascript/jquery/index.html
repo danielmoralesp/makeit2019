@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-minicolors/2.3.4/jquery.minicolors.css">
+
+	<style>
+		/*div {
+			background-color: red;
+			height: 200px;
+		}*/
+	</style>
+	
+</head>
+<body>
+	<div class="step1">
+		hide
+	</div>
+	<div class="step2">
+		show
+	</div>
+
+	<p class="step1">
+		dar click aqui
+	</p>
+
+	<a href="www.google.com">Ir a google</a>
+
+	<input type="text" class="selector">
+
+
+	<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-minicolors/2.3.4/jquery.minicolors.js"></script>
+
+  <script>
+  	$(function(){
+			console.log("ready")
+
+			$(".selector").minicolors();
+
+
+
+			$('ul').append("<li> Estamos creando un h1 desde jquery </li>")
+			$('.clase1 .clase2').replaceWith("<div> div modificado </div>");
+			$('.remove').remove()
+
+			$('div.step1').hide()
+			$('div.step2').show()
+
+			$('p').on("click", function(){
+				alert("dio click en parrafo")
+			})
+
+			$(document).on("mousemove", function(e){
+				console.log("El mouse se encuentra en las coordenadas " + e.pageX + ", " + e.pageY)
+			})
+
+			$(document).on("keyup", function(event){
+				console.log("La tecla que oprimio fue " + event.which)
+			})
+
+			$('a').on('click', function(e){
+				e.preventDefault()
+				alert("oprimio el link")
+			})
+		})
+
+		
+
+
+
+	</script>
+	
+</body>
+</html>
