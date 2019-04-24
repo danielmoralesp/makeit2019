@@ -1,0 +1,21 @@
+{
+	"clave": "valor",
+	"clave2": "valor2",
+	"otro json": {
+		"clave3": 3,
+		"clave4": "cuatro"
+	},
+	"array_objects": [
+		{ "brand": "Renault", "year": 2018 },
+		{ "brand2": "Chevrolet", "year2": 2019}
+	]
+}
+
+
+
+{
+	"user": "My username",
+	"password": "asdasd",
+	"email": "asdasd"
+}
+
